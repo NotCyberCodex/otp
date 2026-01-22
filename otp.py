@@ -5,7 +5,7 @@ import concurrent.futures
 from flask import Flask, request, render_template_string, jsonify
 
 # --- ⚠️ AUTHENTICATION SETTINGS ⚠️ ---
-MAUTH_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJNXzZDMkZSS1k4MiIsInJvbGUiOiJ1c2VyIiwiYWNjZXNzX3BhdGgiOlsiL2Rhc2hib2FyZCJdLCJleHBpcnkiOjE3NjkwOTMxNTEsImNyZWF0ZWQiOjE3NjkwMDY3NTEsIjJvbzkiOiJNc0giLCJleHAiOjE3NjkwOTMxNTEsImlhdCI6MTc2OTAwNjc1MSwic3ViIjoiTV82QzJGUktZODIifQ.OH6WBCHE0D9sRHEe42LgWPbqLQNxmpRnpTW8IoHMRa4"
+MAUTH_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJNXzZDMkZSS1k4MiIsInJvbGUiOiJ1c2VyIiwiYWNjZXNzX3BhdGgiOlsiL2Rhc2hib2FyZCJdLCJleHBpcnkiOjE3NjkxOTk0NTgsImNyZWF0ZWQiOjE3NjkxMTMwNTgsIjJvbzkiOiJNc0giLCJleHAiOjE3NjkxOTk0NTgsImlhdCI6MTc2OTExMzA1OCwic3ViIjoiTV82QzJGUktZODIifQ.IdaOkIf09zobtxACP4u7TlDUaUcD_oh_HH53bs1mEIc"
 COOKIE_VALUE = "PASTE_NEW_COOKIE_HERE" 
 # -------------------------------------
 
@@ -250,4 +250,5 @@ def fetch_api():
 
 if __name__ == '__main__':
     print("✅ V4 TURBO Running at http://localhost:5000")
+
     app.run(port=5000, debug=True)
